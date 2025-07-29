@@ -1,0 +1,23 @@
+    <section class="contact-section" data-aos="fade-up">
+    <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+
+        <form id="contact-form" #contactForm="ngForm" (ngSubmit)="sendEmail(contactForm)">
+        <div class="form-group">
+            <input type="text" name="form_name" placeholder="Your Name" required  [(ngModel)]="formData.form_name"/>
+        </div>
+        <div class="form-group">
+            <input type="email" name="form_email" placeholder="Your Email" required  [(ngModel)]="formData.form_email" />
+        </div>
+        <div class="form-group">
+            <textarea name="message" placeholder="Your Message" required [(ngModel)]="formData.message"></textarea>
+        </div>
+        <button type="submit" class="send-button">Send Message</button>
+        </form>
+
+        <div class="contact-info" data-aos="fade-left">
+        <a href="mailto:arwam3562@gmail.com"> arwam3562@gmail.com</a>
+        <p><strong style="color: #fcdc25;">WhatsApp:</strong> +20 1025226786</p>
+        </div>
+    </div>
+    </section>

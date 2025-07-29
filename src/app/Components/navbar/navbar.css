@@ -1,0 +1,85 @@
+/* General Navbar Styling */
+.navbar {
+background: linear-gradient(to right, #8e8e8f, #1d5cc9); 
+/* background-color: #46486d; */
+
+color: white;
+padding: 10px 0;
+position: sticky;
+top: 0;
+z-index: 1000;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+max-width: 1100px;
+margin: auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 20px;
+}
+
+.logo {
+font-size: 1.8rem;
+font-weight: bold;
+font-family: 'Allura', cursive;
+}
+
+/* Links */
+.nav-links {
+list-style: none;
+display: flex;
+gap: 20px;
+}
+
+.nav-links li a {
+text-decoration: none;
+color: white;
+font-weight: 500;
+font-size: 1.1rem;
+transition: color 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+color: #ffcc00;
+cursor: pointer;
+}
+
+/* Menu icon for mobile */
+.menu-icon {
+display: none;
+flex-direction: column;
+gap: 5px;
+cursor: pointer;
+}
+
+.menu-icon div {
+width: 25px;
+height: 3px;
+background: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+.nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: rgba(153, 153, 153, 0.9);
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    display: none;
+    padding: 10px 0;
+}
+
+.nav-links.active {
+    display: flex;
+}
+
+.menu-icon {
+    display: flex;
+}
+}

@@ -1,0 +1,94 @@
+.home-container {
+height: 100vh;
+background: linear-gradient(to right, #6a11cb, #2575fc);
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+}
+
+.overlay {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 90%;
+max-width: 1200px;
+flex-wrap: wrap;
+}
+
+.home-content {
+flex: 1;
+min-width: 300px;
+padding: 20px;
+}
+
+.home-content h1 {
+font-size: 3rem;
+animation: slideIn 1s ease forwards;
+}
+
+.name {
+color: #ffcc00;
+font-weight: bold;
+font-size: 51px;
+}
+
+.subtitle {
+font-size: 1.3rem;
+margin-top: 10px;
+animation: fadeIn 2s ease forwards;
+}
+
+.social-icons {
+margin-top: 20px;
+}
+
+.social-icons a {
+font-size: 1.8rem;
+margin-right: 15px;
+color: white;
+transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+color: #ffcc00;
+transform: scale(1.2);
+}
+
+.home-image {
+flex: 1;
+min-width: 300px;
+text-align: center;
+}
+
+.home-image img {
+max-width: 50%;
+height: auto;
+border-radius: 50%;
+box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+@keyframes slideIn {
+from { transform: translateY(-50px); opacity: 0; }
+to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+from { opacity: 0; }
+to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+.overlay {
+flex-direction: column;
+text-align: center;
+}
+
+.home-content h1 {
+font-size: 2.5rem;
+}
+
+.subtitle {
+font-size: 1.2rem;
+}
+}

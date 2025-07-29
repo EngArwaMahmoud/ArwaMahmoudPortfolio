@@ -1,0 +1,114 @@
+    .resume-section {
+    padding: 50px 20px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    }
+
+    .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #ffffff;
+    animation: fadeInDown 1s ease;
+    }
+
+    .intro h3 {
+    font-size: 2rem;
+    color: #fcdc25;
+    margin-bottom: 5px;
+    }
+
+    .intro p {
+    font-size: 1rem;
+    color: #e0e0e0;
+    margin: 5px 0;
+    }
+
+    .edu-exp-section {
+    margin: 50px auto;
+    text-align: left;
+    max-width: 800px;
+    }
+
+    .edu-exp-section h3 {
+    font-size: 1.8rem;
+    color: #f3f3f3;
+    margin-bottom: 20px;
+    border-left: 4px solid #6a11cb;
+    padding-left: 10px;
+    }
+
+    .entry {
+    margin-bottom: 25px;
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+    }
+
+    .entry:hover {
+    transform: translateY(-5px);
+    }
+
+    .entry h4 {
+    margin: 0;
+    color: #222;
+    font-size: 1.2rem;
+    }
+
+    .entry .date {
+    font-size: 0.9rem;
+    color: gray;
+    }
+
+    .entry p {
+    font-size: 0.95rem;
+    color: #444;
+    margin-top: 5px;
+    }
+
+    .bullet-list {
+    list-style: disc inside;
+    padding-left: 15px;
+    color: #444;
+    }
+
+    .bullet-list li {
+    margin-bottom: 10px; 
+    color: #cccccc;
+    }
+
+    .download-cv {
+    margin-top: 40px;
+    }
+
+    .download-cv .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #2575fc;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+    }
+
+    .download-cv .btn:hover {
+    background: #fcdc25;
+    transform: scale(1.05);
+    color: #222;
+    }
+
+    @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+        .resume-section h3 {
+        font-size: 1.3rem;
+        }
+
+        
+    }

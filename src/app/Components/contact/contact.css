@@ -1,0 +1,116 @@
+.contact-section {
+    min-height: 100vh;
+    height: auto;
+    background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+    padding: 50px 20px 100px 20px; 
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+
+    .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    }
+
+    .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+    }
+
+    #contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    }
+
+    .form-group {
+    width: 100%;
+    }
+
+    #contact-form input,
+    #contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    background-color: #ffffff;
+    color: #000000;
+    }
+
+    #contact-form input::placeholder,
+    #contact-form textarea::placeholder {
+    color: #999;
+    }
+
+    #contact-form input:focus,
+    #contact-form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    background-color: #f0f0f0;
+    }
+
+    textarea {
+    min-height: 120px;
+    resize: vertical;
+    }
+
+    .send-button {
+    background-color: #ffffff;
+    color: #6a11cb;
+    padding: 12px 30px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.4s ease;
+    }
+
+    .send-button:hover {
+    transform: scale(1.05);
+    background-color: #fcdc25;
+    color: #000000;
+    }
+
+    .contact-info {
+    margin-top: 40px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    }
+
+    .contact-info a {
+    color: #ffffff;
+    text-decoration: underline;
+    display: block;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    }
+
+    .contact-info p {
+    margin: 0;
+    }
+
+    @media (max-width: 600px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    #contact-form input,
+    #contact-form textarea {
+        font-size: 0.95rem;
+        padding: 12px;
+    }
+
+    .send-button {
+        font-size: 0.95rem;
+        padding: 10px 20px;
+    }
+
+    .contact-info {
+        font-size: 1rem;
+    }
+    }

@@ -1,0 +1,64 @@
+    <div class="about-container">
+
+    <h2 class="achive">My Achievements</h2>
+    <section id="stats" class="stats-section">
+
+
+        <div class="stat-card">
+        <h2>{{ students }}+</h2>
+        <p>Students Taught</p>
+        </div>
+        <div class="stat-card">
+        <h2>{{ kids }}+</h2>
+        <p>Kids Engaged</p>
+        </div>
+        <div class="stat-card">
+        <h2>{{ hours }}+</h2>
+        <p>Training Hours</p>
+        </div>
+        <div class="stat-card">
+        <h2>{{ workshops }}+</h2>
+        <p>Workshops Delivered</p>
+        </div>
+    </section>
+
+<section class="about-paragraph">
+    <h2>Who Am I?</h2>
+
+    <p>
+        I'm a computer engineering student at Tanta University.
+        I've been teaching programming for the past two years to both kids (starting from age 7)
+        and university students — online and offline.
+    </p>
+
+    <p>
+        Currently, I work as a programming instructor with students from more than five countries.
+        My teaching style focuses on real understanding rather than memorization, and I incorporate quizzes, 
+        challenges, and games to keep learning interactive and fun.
+    </p>
+
+    <p>
+        I'm passionate about learning and continuous improvement. While my main focus is front-end development, 
+        I'm currently working on developing my back-end skills as well. My goal is to make programming simple, 
+        engaging, and accessible for everyone.
+    </p>
+
+</section>
+
+
+    <section class="gallery-section" #gallerySection>
+    <h2 class="gallery-title">From My Journey</h2>
+    <div class="slider-container" [class.active]="isVisible">
+    <div class="slider" [style.transform]="'translateX(-' + currentIndex * 100 + '%)'">
+        <div class="slide" *ngFor="let image of images">
+        <img [src]="image" alt="gallery image" />
+        </div>
+    </div>
+    <button class="prev" (click)="prevSlide()">‹</button>
+    <button class="next" (click)="nextSlide()">›</button>
+    </div>
+    </section>
+
+
+
+    </div>
